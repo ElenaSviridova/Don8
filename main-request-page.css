@@ -268,14 +268,12 @@
       opacity: 0.5;
   }
  
-  
-
-  .navbar__image {
+.navbar__image {
       width: 21px;
       height: 24px;
       margin: 0 auto;
       object-fit: contain;
-  }
+}
 
   .navbar__caption {
       font-size: 10px;
