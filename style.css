@@ -1,0 +1,225 @@
+@import url(./vendors/normalize.css);
+
+@import url(./vendors/fonts.css);
+
+
+body {
+    margin: 0;
+}
+
+.page {
+    background-color: black;
+}
+.login-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: linear-gradient( rgb(152,237,243),rgb(53,156,255));
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+.login-main__image {
+    object-fit: cover;
+    margin: 0 auto 75px;
+    max-width: 112px;
+    min-height: 95px;
+}
+
+@media all and (min-width: 768px) {
+    .login-main__image {
+        max-width: 150px;
+    }
+}
+
+.login-main__rectangle {
+    border: rgb(97, 240, 250) 1px solid;
+    outline: none;
+    margin: 0 0 16px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
+    width: 100%;
+    min-height: 48px;
+    box-sizing: border-box;
+    color: rgb(51, 147, 255);
+    font-family: 'Inter','Helvetica','Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.24px;
+}
+
+.login-main__rectangle:hover {
+    border: rgb(51, 147, 255) 1px solid;
+}
+
+@media all and (min-width: 320px) {
+    .login-main__rectangle {
+        max-width: 343px;
+    }
+}
+
+.login-main__rectangle::-webkit-input-placeholder {
+    font-family: 'Inter','Helvetica','Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.24px;
+    margin-right: 11px;
+    color: rgb(51, 147, 255);
+
+
+}
+.login-main__rectangle::-moz-placeholder {
+    font-family: 'Inter','Helvetica','Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.24px;
+    margin-right: 11px;
+    color: rgb(51, 147, 255);
+}
+.login-main__rectangle::-ms-input-placeholder {
+    font-family: 'Inter','Helvetica','Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.24px;
+    margin-right: 11px;
+    color: rgb(51, 147, 255);
+}
+.login-main__rectangle::placeholder {
+    font-family: 'Inter','Helvetica','Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.24px;
+    margin-right: 11px;
+    color: rgb(51, 147, 255);
+}
+
+.login-main__button {
+    font-family: 'Inter','Helvetica','Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 0.24px;
+    border: none;
+    border-radius: 10px;
+    margin: 16px 0 0;
+    width: 100%;
+    height: 48px;
+    color:  rgb(79, 177, 251);
+    background-color: white;
+}
+
+.login-main__button:hover {
+    border: rgb(51, 147, 255) 1px solid;
+}
+
+
+@media all and (min-width: 320px) {
+    .login-main__button {
+        max-width: 343px;
+    }
+}
+
+.login-main__link {
+    text-decoration: none;
+    color:  rgb(79, 177, 251);
+    font-family: 'Inter','Helvetica','Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 0.24px;
+}
+
+.login-main__error {
+    display: none;
+    color: rgb(141, 60, 247);
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.login-main__error_visible {
+    display: block;
+}
+
+.login-main__rectangle_red-border {
+    border: solid 2px  rgb(114, 7, 255);
+    margin: 0;
+}
+
+.login-main__button_disabled {
+    background:#E5E5E5;
+    opacity: 0.5;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.3);
+}
+
+.popup__container {
+    max-width: 270px;
+    height: 17%;
+    background-color: rgba(242,242,242,0.8);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+    border-radius: 14px;
+    margin: 307px auto 0 ;
+}
+.popup__header{
+    margin: 0 auto 2px;
+    padding: 19px 0 0;
+    font-family: Inter;
+    font-size: 17px;
+    text-align: center;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    font-weight: bold;
+}
+
+.popup__text {
+    width: 238px;
+    margin: 0 auto 21px;
+    font-family: Inter;
+    font-size: 13px;
+    text-align: center;
+    line-height: 16px;
+    letter-spacing: -0.08px;
+    font-weight: normal;
+}
+
+.popup__button {
+    width: 100%;
+    height: 47.5px;
+    background-color: rgba(242,242,242, 0);
+    outline: none;
+    border:none;
+    border-top: rgba(60, 60, 67, 0.29) solid 0.5px;
+    font-family: Inter;
+    font-size: 17px;
+    text-align: center;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    font-weight: normal;
+    color: rgb(53, 156, 255);
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./vendors/normalize.css">
+</head>
+<body>
+  <div class="page">
+    <main class="login-main">
+        <img class="login-main__image" src="./images/don8_logo.png" alt="">
+        <form name="formDon" class="login-main__content" novalidate>
+          <input name="email" id="input-name" type="email" required class="login-main__rectangle login-main__rectangle_type_email" placeholder="e-mail" autocomplete="off"></input>
+          <input name="password" id="input-password" type="password" required class="login-main__rectangle login-main__rectangle_type_password" placeholder="password" autocomplete="off"></input>
+          <button type="submit" class="login-main__button">
+            <a href="#" class="login-main__link">Sign in</a>
+            </button>
+          </form>
+    </main>
+    <div class="popup popup_incorrect">
+      <div class="popup__container">
+        <h2 class="popup__header">Email or password incorrect</h2>
+        <p class="popup__text">Please check an email and a password and try again</p>
+        <button class="popup__button" type="button">Ок</button>
+      </div>
+    </div>
+    <div class="popup popup_invalid_email">
+      <div class="popup__container">
+        <h2 class="popup__header">Invalid email format</h2>
+        <p class="popup__text">Please enter a valid email</p>
+        <button class="popup__button" type="button">Ок</button>
+      </div>
+    </div>
+  </div>
+  <script src="/donate.js"></script>
+</body>
+
+</html>
