@@ -244,8 +244,7 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(20px);
+    background-color: rgb(255, 255, 255);
     border-top: 0.5px solid rgba(0, 0, 0, 0.3);
     position: fixed; /* Set the navbar to fixed position */
     bottom: 0; /* Position the navbar at the top of the page */
