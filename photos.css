@@ -1,0 +1,78 @@
+.page-photo {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 390px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.photos__image {
+    width: 100%;
+    margin-bottom: 50%;
+    height: 251px;
+    object-fit: cover;
+}
+
+.back {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    align-items: baseline;
+    padding-top: 20px;
+}
+
+.back:hover {
+    opacity: 0.5;
+}
+
+.back__photos-arrow {
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid white;
+    border-right: 3px solid  white;
+    margin: 20px 0 0 20px;
+    overflow: hidden;
+    transform: rotate(-135deg);
+}
+
+.back__caption {
+    margin: 0 auto;
+    font-size: 17px;
+    font-family: Inter;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+}
+
+.footer {
+    background-color: black;
+}
+
+.dots {
+    text-align: center; 
+}
+
+.dot {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 9px 0 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+ 
+ .dot:last-child {
+     margin-right: 0;
+ } 
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }

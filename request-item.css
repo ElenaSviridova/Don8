@@ -1,6 +1,6 @@
 .request-item-big {
     max-width: 390px;
-    margin: auto;
+    margin: 0 auto 85px;
 }
 
 .request-item__article {
@@ -90,6 +90,8 @@
 
 .request-item-big__nursery {
     font-family: Inter;
+    text-decoration: none;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,6 +104,10 @@
     border: none;
     border-top: rgba(60, 60, 67, 0.29) solid 0.5px;
     border-bottom: rgba(60, 60, 67, 0.29) solid 0.5px;
+}
+
+.request-item-big__nursery:hover {
+    opacity: 0.5;
 }
 
 .request-item__paragraph {
